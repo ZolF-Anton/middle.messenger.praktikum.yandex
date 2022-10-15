@@ -1,6 +1,8 @@
 # Проект Messenger
 
-## Netlify - https://
+## Netlify
+
+### https://transcendent-cucurucho-5f0696.netlify.app/pages/chats/chats.html
 
 ## Команды запуска проекта
 
