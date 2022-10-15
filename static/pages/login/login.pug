@@ -1,0 +1,21 @@
+
+extends ../../index.pug
+
+include ../../mixin/input/input.pug
+    -
+        const pageTitle = 'LoginPage'
+        const pageLang = 'en'
+    -
+
+block content
+    include ../../components/nav/nav
+    div.login-form
+        div.login-form__container
+            h2.login-form__title LogIn
+            +Input('LogIn', 'LogIn', 'wrong login')(name='login', id='login', type='text', for='login')
+            +Input('passWord', 'passWord')(name='password', id='password', type='password', for='password')
+        div.buttons
+            button.login-form__submit-button Sign In
+            a.login-form__link(href='~static/pages/register/register.pug') Alone? JOIN US!
+append scripts
+    script(type="module", src="./login.js")

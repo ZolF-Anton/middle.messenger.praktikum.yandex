@@ -1,0 +1,39 @@
+.content {
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .errPUG {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        &__title {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 50px;
+            line-height: 50px;
+            text-align: center;
+            margin-bottom: 25px;
+            color: $color_main;
+        }
+        &__subtitle {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 25px;
+            margin-bottom: 47px;
+            text-align: center;
+            color: $color_777;
+        }
+        &__link {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 15px;
+            text-align: center;
+            color: $color_blue;
+        }
+    }
+}

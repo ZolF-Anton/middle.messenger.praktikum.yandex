@@ -1,0 +1,74 @@
+@import '../../../styles/vars';
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    &__popup {
+        width: 340px;
+        height: 260px;
+        background: $color_w;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.14);
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__input {
+        display: none;
+    }
+    &__title_fail {
+        margin: 40px 0;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 20px;
+        text-align: center;
+        color: #ff2f2f;
+    }
+    &__label {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        width: 120px;
+        margin-bottom: 45px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration-line: underline;
+        color: $color_main;
+        transition: 0.3s;
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+    &__button {
+        width: 280px;
+        height: 37px;
+        padding: 12px 0;
+        border-radius: 8px;
+        background: $color_main;
+        margin-bottom: 22px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 13px;
+        text-align: center;
+        cursor: pointer;
+        color: $color_w;
+        transition: 0.3s;
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+    &__subtext {
+        font-size: 11px;
+        color: #ff2f2f;
+    }
+}

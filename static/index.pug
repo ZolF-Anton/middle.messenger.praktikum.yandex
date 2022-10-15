@@ -1,0 +1,22 @@
+-
+    const pageTitle = 'ChatterBox'
+    const pageLang = 'en'
+-
+
+html(lang=pageLang)
+     head
+         meta(charset="UTF-8")
+         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+         meta(http-equiv="X-UA-Compatible", content="ie=edge")
+         title #{pageTitle}
+         link(rel="icon" type="image/png" sizes="32x32" href="~/static/assets/images/favicon.png")
+         link(rel="stylesheet" href="~/static/main.scss")
+     body
+         main
+             block content
+                include components/nav/nav
+                section.handshake
+                    h1 Wellcome to Pirate Bay's Messenger
+         block scripts
+             script(type="module", src="~/static/main.js")
+             script(type="module", src="~/static/indexed.js")

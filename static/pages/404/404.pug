@@ -1,0 +1,10 @@
+extends ../../index.pug
+include ../../mixin/errPUG/errPUG.pug
+
+block content
+    include ../../components/nav/nav
+    div.content
+        +errPUG('404', 'Sorry, We try to find... ')
+
+append scripts
+    script(type="module", src="./404.js")
