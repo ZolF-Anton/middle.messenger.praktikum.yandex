@@ -1,0 +1,23 @@
+extends ../../index.pug
+include ../../mixin/configInput/configInput.pug
+
+block content
+    include ../../components/nav/nav
+    div.settings
+        a(href='~static/pages/modal/changeAvatar/changeAvatar.pug')
+            div.settings__avatar(title='Change Avatar') Change Avatar            
+                div.settings__avatar_notion Change Avatar
+        form.settings__form
+            +configInput('nmm@ya.ru', 'Email')(type='email', name='email', id='email', for='email')
+            +configInput('NMM', 'LogIn')(type='text', name='login', id='login', for='login')
+            +configInput('Nicholas', 'Name')(type='text', name='first_name', id='first_name', for='first_name')
+            +configInput('Mikhluha', 'Last Name')(type='text', name='second_name', id='second_name', for='second_name')
+            +configInput('Maclay', 'Nickname')(type='text', name='display_name', id='display_name', for='display_name')
+            +configInput('+7 (905) 431 40 40', 'Phone')(type='phone', name='phone', id='phone', for='phone')
+        button.settings__button Save
+        div.settings__push-back
+            a.settings__push-back-button(href='~static/index.pug')
+
+append scripts
+    script(type="module", src="./settings.js")
+    

@@ -1,0 +1,13 @@
+extends ../../../index.pug
+block content
+    include ../../../components/nav/nav
+    div.overlay
+        div.overlay__popup
+            h1.overlay__title_fail Load is failed
+            label.overlay__label(for='avatar') Choose your file
+                input.overlay__input(type='file', name='avatar' id='avatar')
+            button.overlay__button Change
+            div.overlay__subtext
+append scripts
+    script(type="module", src="./failLoad.js")
+    

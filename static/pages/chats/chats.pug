@@ -1,0 +1,64 @@
+extends ../../index.pug
+
+block content
+    include ../../components/nav/nav
+    div.screen
+        div.screen__chats
+            div.screen__chats-top
+                div.screen__chats-link
+                    
+                    input.screen__chats-input(type='text' placeholder="Search")
+                        //- div.input-placeholder
+                    img.input-placeholder__img(src='../../assets/icons/search.svg' alt='search')                 
+                    a(href='#')
+                        img.screen__chats-profile-link-image(src='../../assets/icons/tinker.svg' alt='tinker')                
+                    
+                div.screen__chats-messages                   
+        div.screen__chat
+            div.screen__chat-user
+                div.screen__chat-user-info
+                    img.screen__chat__avatar(src='https://avatars.dicebear.com/api/human/Bret.svg', alt='Activ user Avatar')
+                    p.screen__chat-user-username Leanne Graham
+                button.screen__chat-button
+                    img.screen__chat-button__img(src='../../assets/icons/additional.svg' alt='additional')
+                div.screen__chat__toggleMenu
+                    div.screen__chat__menu__wrap
+                        img.screen__chat__menu__img(src='../../assets/icons/menu/plus.svg' alt='add')
+                        div.screen__chat__menu__text Load media
+                    div.screen__chat__menu__wrap
+                        img.screen__chat__menu__img(src='../../assets/icons/menu/del.svg' alt='delete')
+                        div.screen__chat__menu__text Load file
+            div.screen__chat__area
+                div.screen__chat__area_msg
+                    p Привет! Смотри, тут всплыл интересный кусок лунной космической истории — НАСА в какой-то момент попросила Хассельблад адаптировать модель SWC для полетов на Луну. Сейчас мы все знаем что астронавты летали с моделью 500 EL — и к слову говоря, все тушки этих камер все еще находятся на поверхности Луны, так как астронавты с собой забрали только кассеты с пленкой.
+                    p Хассельблад в итоге адаптировал SWC для космоса, но что-то пошло не так и на ракету они так никогда и не попали. Всего их было произведено 25 штук, одну из них недавно продали на аукционе за 45000 евро.
+                    p Как остановить драку двух слепых?
+                    div.screen__chat__area_msg__time
+                        time 11:50
+                div.screen__chat__area_msg 
+                    img(src='../../assets/images/photo.png' alt='photo')
+                    div.screen__chat__area_msg__time
+                        time 11:54
+                    
+                div.screen__chat__area_aswer
+                    p Нужно крикнуть: "Ставлю на парня с ножом!"
+                    div.screen__chat__area_msg__time
+                        img.screen__chat__area_aswer__approve(src='../../assets/icons/menu/dblBirds.svg' alt='sent')
+                        time 11:55
+            div.screen__chat-input
+                img.screen__chat-input__add(src='../../assets/icons/add.svg' alt='add')
+                input.screen__chat-input_text(type='text' placeholder='Message')
+                img.screen__chat-input-send(src='../../assets/icons/send.svg' alt='Send message')
+            div.screen__chat__menu
+                div.screen__chat__menu__wrap
+                    img.screen__chat__menu__img(src='../../assets/icons/menu/media.svg' alt='add')
+                    div.screen__chat__menu__text Load media
+                div.screen__chat__menu__wrap
+                    img.screen__chat__menu__img(src='../../assets/icons/menu/file.svg' alt='add')
+                    div.screen__chat__menu__text Load file
+                div.screen__chat__menu__wrap
+                    img.screen__chat__menu__img(src='../../assets/icons/menu/map.svg' alt='add')
+                    div.screen__chat__menu__text Coordinates
+append scripts
+    script(type="module", src="./chats.js")
+    

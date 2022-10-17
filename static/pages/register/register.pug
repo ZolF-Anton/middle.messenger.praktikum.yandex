@@ -1,0 +1,21 @@
+extends ../../index.pug
+include ../../mixin/input/input.pug
+
+block content
+    include ../../components/nav/nav
+    div.register
+        div.register__container
+            h1.register__title Registration
+            +Input('Email', 'Email')(name='email', id='email', type='email', for='email')
+            +Input('LogIn', 'LogIn')(name='login', id='login', type='text', for='login')
+            +Input('Name', 'Name')(name='first_name', id='first_name', type='text', for='first_name')
+            +Input('LastName', 'LastName')(name='second_name', id='second_name', type='text', for='second_name')
+            +Input('Phone', 'Phone')(name='phone', id='phone', type='phone', for='phone')
+            +Input('passWord', 'passWord')(name='password', id='password', type='password', for='password')
+            +Input('passWord', 'approve passWord', 'passwords is NOT match')(name='password_confirm', id='password_confirm', type='password', for='password_confirm')
+        div.buttons
+            button.register__submit-button Registration
+            a.register__link(href='~static/pages/login/login.pug') LogIn
+append scripts
+    script(type="module", src="./register.js")
+    

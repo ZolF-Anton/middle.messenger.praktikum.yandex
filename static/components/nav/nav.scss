@@ -1,0 +1,42 @@
+@import '../../styles/vars.scss';
+nav {
+    padding: 0.5rem;
+    background-color: $color_main;
+}
+.nav_menu {
+    display: flex;
+    justify-content: center;
+    gap: 1.7rem;
+
+    &__liUl {
+        display: block;
+        position: relative;
+        &:hover {
+            .nav_menu__sub {
+                display: block;
+            }
+        }
+    }
+    .nav_menu__sub {
+        display: none;
+        position: absolute;
+        background-color: #7abcde;
+        width: 155px;
+        .nav_menu__liSub {
+            padding: 12px 16px;
+            display: block;
+        }
+    }
+
+    li,
+    a {
+        color: $color_w;
+        text-decoration: none;
+        cursor: pointer;
+        background-color: $color_main;
+        &:hover {
+            transition: 233ms;
+            color: $color_aqua;
+        }
+    }
+}

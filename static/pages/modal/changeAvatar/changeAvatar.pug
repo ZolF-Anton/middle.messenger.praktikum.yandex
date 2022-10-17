@@ -1,0 +1,13 @@
+extends ../../../index.pug
+block content
+    include ../../../components/nav/nav
+    div.overlay
+        div.overlay__popup
+            h1.overlay__title Load
+            label.overlay__label(for='avatar') Choose your file
+                input.overlay__input(type='file', name='avatar' id='avatar')
+            button.overlay__button Change
+            div.overlay__subtext choose a file to proceed
+append scripts
+    script(type="module", src="./changeAvatar.js")
+    

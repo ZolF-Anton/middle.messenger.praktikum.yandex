@@ -1,0 +1,28 @@
+nav
+    ul.nav_menu
+            li
+                a(href='~static/pages/register/register.pug') Register
+            li
+                a(href='~static/pages/login/login.pug') Login
+            li
+                a(href='~static/pages/chats/chats.pug') Chats
+            li
+                a(href='~static/pages/settings/settings.pug') Settings            
+            li
+                a(href='~static/pages/changePassword/changePassword.pug') Password
+            li
+                a(href='~static/pages/404/404.pug') 404
+            li
+                a(href='~static/pages/500/500.pug') 500
+            li.nav_menu__liUl Modals  
+                ul.nav_menu__sub               
+                    li.nav_menu__liSub
+                        a(href='~static/pages/modal/changeAvatar/changeAvatar.pug') Avatar
+                    li.nav_menu__liSub
+                        a(href='~static/pages/modal/loadSuccess/loadSuccess.pug') Success Load
+                    li.nav_menu__liSub
+                        a(href='~static/pages/modal/failLoad/failLoad.pug') FAIL, try again                  	
+               
+block scripts
+    script(type="module", src="~/static/components/nav/nav.js")
+    
