@@ -8,7 +8,7 @@ nav {
     justify-content: center;
     gap: 1.7rem;
 
-    .nav_menu__liUl {
+    &__liUl {
         display: block;
         position: relative;
         &:hover {
@@ -22,7 +22,7 @@ nav {
         position: absolute;
         background-color: #7abcde;
         width: 155px;
-        li {
+        .nav_menu__liSub {
             padding: 12px 16px;
             display: block;
         }

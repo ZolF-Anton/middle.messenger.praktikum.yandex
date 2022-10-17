@@ -5,7 +5,7 @@ block content
     include ../../components/nav/nav
     div.register
         div.register__container
-            h2.register__title Registration
+            h1.register__title Registration
             +Input('Email', 'Email')(name='email', id='email', type='email', for='email')
             +Input('LogIn', 'LogIn')(name='login', id='login', type='text', for='login')
             +Input('Name', 'Name')(name='first_name', id='first_name', type='text', for='first_name')
@@ -18,3 +18,4 @@ block content
             a.register__link(href='~static/pages/login/login.pug') LogIn
 append scripts
     script(type="module", src="./register.js")
+    

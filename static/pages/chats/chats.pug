@@ -9,7 +9,7 @@ block content
                     
                     input.screen__chats-input(type='text' placeholder="Search")
                         //- div.input-placeholder
-                    img.input-placeholder__img(src='../../assets/icons/search.svg')                 
+                    img.input-placeholder__img(src='../../assets/icons/search.svg' alt='search')                 
                     a(href='#')
                         img.screen__chats-profile-link-image(src='../../assets/icons/tinker.svg' alt='tinker')                
                     
@@ -34,17 +34,17 @@ block content
                     p Хассельблад в итоге адаптировал SWC для космоса, но что-то пошло не так и на ракету они так никогда и не попали. Всего их было произведено 25 штук, одну из них недавно продали на аукционе за 45000 евро.
                     p Как остановить драку двух слепых?
                     div.screen__chat__area_msg__time
-                        span 11:50
+                        time 11:50
                 div.screen__chat__area_msg 
                     img(src='../../assets/images/photo.png' alt='photo')
                     div.screen__chat__area_msg__time
-                        span 11:54
+                        time 11:54
                     
                 div.screen__chat__area_aswer
                     p Нужно крикнуть: "Ставлю на парня с ножом!"
                     div.screen__chat__area_msg__time
                         img.screen__chat__area_aswer__approve(src='../../assets/icons/menu/dblBirds.svg' alt='sent')
-                        span 11:54
+                        time 11:55
             div.screen__chat-input
                 img.screen__chat-input__add(src='../../assets/icons/add.svg' alt='add')
                 input.screen__chat-input_text(type='text' placeholder='Message')
@@ -61,3 +61,4 @@ block content
                     div.screen__chat__menu__text Coordinates
 append scripts
     script(type="module", src="./chats.js")
+    

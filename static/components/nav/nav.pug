@@ -1,5 +1,3 @@
-
-
 nav
     ul.nav_menu
             li
@@ -18,12 +16,13 @@ nav
                 a(href='~static/pages/500/500.pug') 500
             li.nav_menu__liUl Modals  
                 ul.nav_menu__sub               
-                    li
+                    li.nav_menu__liSub
                         a(href='~static/pages/modal/changeAvatar/changeAvatar.pug') Avatar
-                    li
+                    li.nav_menu__liSub
                         a(href='~static/pages/modal/loadSuccess/loadSuccess.pug') Success Load
-                    li
+                    li.nav_menu__liSub
                         a(href='~static/pages/modal/failLoad/failLoad.pug') FAIL, try again                  	
                
 block scripts
     script(type="module", src="~/static/components/nav/nav.js")
+    
